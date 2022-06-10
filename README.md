@@ -19,9 +19,35 @@ CS composes and computes CSTX using cessor service transaction protocol, CSTP.<b
 CSTP addressed CSTX to perform particular processor of a CS on CIS.<br />
 CSTP maps a set of functions in a module of a package in a specific range on an allocated CS domain.<br />
 
+# Cessor Service Transaction Protocol, CSTP
+
+CIS provides service model specifying how a procedure has to be called.
+CIS model has 4 layers to address a particular process of a procedure on CIS.
+
+1. Version Layer<br />
+	- Protocol version control
+	- Version serial domain
+	- Version serial number
+2. Service Layer
+	- Service domain
+	- Service sub-domain
+3. Procedure Layer
+	- Procedure range
+	- Procedure package
+4. Process Layer
+	- Process module
+	- Processor reference
+
+![alt text][ref_cstp_layers]
+
 # Organization
 
 A fully decentralized open-source project under CIS license, CISL.<br/>
 
 CIS project is maintained by Cessor Developer Committee, CDC, which is the structured organization of known or anonymous CIS developers have contributed to the project.
 
+
+
+
+
+[ref_cstp_layers]: <https://github.com/cessor-org/CIS/blob/main/docs/CIS/CSTP-layers.png>
