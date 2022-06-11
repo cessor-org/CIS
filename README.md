@@ -121,12 +121,15 @@ CIS model has 4 layers to address a particular process of a procedure on CIS.
     256 > Ver >= 0, The version of authentication information on CIS
     ```
 ### CSTX ID is the output of SHA-256 hash function, whose input is the CSTX.<br/>
+```sh
+    cryptography:hash(sha256, CSTX)             {...}           32 Octets
+```
 ![alt text][ref_cstx]
 # Organization
 
 A fully decentralized open-source project under CIS license, CISL.<br/>
 
-CIS project is maintained by Cessor Developer Committee, CDC, which is the structured organization of known or anonymous CIS developers have contributed to the project.
+CIS project is maintained by Cessor Developer Committee, CDC, which is the structured organization of known or anonymous CIS developers have contributed to the project. 
 
 
 
