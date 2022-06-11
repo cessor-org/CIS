@@ -58,21 +58,21 @@ CIS model has 4 layers to address a particular process of a procedure on CIS.
 	II. Service Domain Range
 
     ```sh
-        Service Domain Range, PVC           {SDR0,SDR1}         2 Octets
+        Service Domain Range, SDR           {SDR0,SDR1}         2 Octets
     ```
     ```sh
     SDR0 = First octet is allocated for service domain.
     SDR1 = Second octet is allocated for service sub-domain.
 
     *Service domain <0> has following reserved sub-domains
-    <0> .. <3>	system services
+                        <0> .. <3>	system services
 
     *Service domain 255 is reserved for local service sub-domains
     ```
 
 	III. Procedure Source
     ```sh
-        Procedure Source, PS           {PS0,PS1}         2 Octets
+        Procedure Source, PS                {PS0,PS1}           2 Octets
     ```
     ```sh
     PS0 = First octet is allocated for service procedure range.
@@ -82,7 +82,7 @@ CIS model has 4 layers to address a particular process of a procedure on CIS.
 	IV. Process Reference
 
     ```sh
-        Process Reference, PR           {PR0,PR1}         2 Octets
+        Process Reference, PR               {PR0,PR1}           2 Octets
     ```
     ```sh
     PR0 = First octet is allocated for service process module.
@@ -99,21 +99,21 @@ CIS model has 4 layers to address a particular process of a procedure on CIS.
 	Based on the process reference, the information can be a Signature or a MAC.<br/>
     I. TX authentication information
     ```sh
-        TX authentication information     {...}         K Octets
+        TX authentication information     {...}                 K Octets
     ```
     ```sh
     K = TX authentication length
     ```
     II. TX authentication length
     ```sh
-        Length                           {K}            1 Octet
+        Length                           {K}                    1 Octet
     ```
     ```sh
     256 > K >= 0, The length of authentication information
     ```
     III. TX authentication version
     ```sh
-        Version                         {Ver}           1 Octet
+        Version                         {Ver}                   1 Octet
     ```
     ```sh
     256 > Ver >= 0, The version of authentication information on CIS
