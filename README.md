@@ -44,6 +44,7 @@ CIS model has 4 layers to address a particular process of a procedure on CIS.
 - CSTX contains three parts:
 
 1. TX header<br/>
+    - The header addresses to a unique processor on CIS.<br/>
 	I. Protocol Version Control
     ```sh
         Protocol Version Control, PVC       {CBI,VSD,VSN}       3 Octets
@@ -91,8 +92,8 @@ CIS model has 4 layers to address a particular process of a procedure on CIS.
     ```
 
 
-2. TX body
-	Associated parameters of corresponding processor as function arguments.
+2. TX body<br/>
+    The data block of transaction represents associated parameters of corresponding processor as function arguments.
 	
 3. TX footer<br/>
 	According to process reference, CSTX may need authentication information to be validated.
