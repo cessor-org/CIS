@@ -41,6 +41,7 @@ CIS model has 4 layers to address a particular process of a procedure on CIS.
 ![alt text][ref_cstp_layers]
 
 # Cessor Service Transaction, CSTX
+- CSTX is the structured service information object and the I/O medium on CIS.
 - CSTX contains three parts:
 
 1. TX header<br/>
