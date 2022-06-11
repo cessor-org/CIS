@@ -1,9 +1,9 @@
 # Overview
 
 A distributed platform to compose and compute information services, from a simple mathematical operation to rotation of a solar cell on a spacecraft.<br/>
-The distributed storage records worthful information for centuries as D20-Blockchain with consensus mechanism of PoS.<br/>
+The distributed storage records worthful information for centuries as D20-Blockchain with the consensus mechanism of PoS.<br/>
 The decentralized network on top of UDP/IP routed by distributed hash table provides peer-to-peer connections, which enable nodes to stablish end-to-end secure transmission tunnel, even though they use dynamic IP addresses behind ISPs, thanks to Hole-Punching mechanism.<br/>
-The distributed environment enhances developers to implement and deploy their services coded with C/C++, Erlang/OTP, JAVA, Python, JavaScript and another supported programming languages and frameworks. It provides a laboratory of distributed systems for developers to design, implement, deploy and test services for example on a local IoT system. Furthermore, web application providers are able to serve their services using the advantages of distributed computing to reduce serving costs.<br/>
+The distributed environment enhances developers to implement and deploy their services coded with C/C++, Erlang/OTP, JAVA, Python, JavaScript and other supported programming languages and frameworks. It provides a laboratory of distributed systems for developers to design, implement, deploy and test services for example on a local IoT system. Furthermore, web application providers are able to serve their services using the advantages of distributed computing to reduce serving costs.<br/>
 Free Flow of Information and Privacy are the CIS duty. Everybody can provide, access and use information services on CIS anonymously.<br/>
 
 
@@ -14,10 +14,9 @@ A distributed service-oriented and TX-based platform to perform particular proce
 CS is a distributed TX-based software-service documented and coded by supported programming languages.<br />
 CIS provides cessor service transactions, CSTX as the I/O medium to communicate with other CS on CIS.<br />
 CSTX is the structured service information object integrated with CIS.<br />
-
 CS composes and computes CSTX using cessor service transaction protocol, CSTP.<br />
 CSTP addressed CSTX to perform particular processor of a CS on CIS.<br />
-CSTP maps a set of functions in a module of a package in a specific range on an allocated CS domain.<br />
+CSTP maps a set of functions in a module of a package in a specific range on an allocated or local CS domain.<br />
 
 # Cessor Service Transaction Protocol, CSTP
 
@@ -47,12 +46,11 @@ CIS model has 4 layers to address a particular process of a procedure on CIS.
 1. TX header<br/>
     - The header addresses to a unique processor on CIS.<br/>
     - TX header contains four parts:<br/>
-    
+
 	I. Protocol Version Control
     ```sh
         Protocol Version Control, PVC       {CBI,VSD,VSN}       3 Octets
-    ```
-    ```sh
+
     CBI = First octet is allocated for Crown-Block index, on which the protocol is issued.
     VSD = Second octet is allocated for the version serial domain.
     VSN = Third octet is allocated for the version serial number.
@@ -63,8 +61,7 @@ CIS model has 4 layers to address a particular process of a procedure on CIS.
 
     ```sh
         Service Domain Range, SDR           {SDR0,SDR1}         2 Octets
-    ```
-    ```sh
+
     SDR0 = First octet is allocated for service domain.
     SDR1 = Second octet is allocated for service sub-domain.
 
@@ -77,8 +74,7 @@ CIS model has 4 layers to address a particular process of a procedure on CIS.
 	III. Procedure Source
     ```sh
         Procedure Source, PS                {PS0,PS1}           2 Octets
-    ```
-    ```sh
+
     PS0 = First octet is allocated for service procedure range.
 	PS1 = Second octet is allocated for service procedure package.
     ```
@@ -87,8 +83,7 @@ CIS model has 4 layers to address a particular process of a procedure on CIS.
 
     ```sh
         Process Reference, PR               {PR0,PR1}           2 Octets
-    ```
-    ```sh
+
     PR0 = First octet is allocated for service process module.
     PR1 = Second octet is allocated for service process function/s, Processor.
     *Processor <255> is reserved for processor extension.
@@ -104,22 +99,19 @@ CIS model has 4 layers to address a particular process of a procedure on CIS.
     I. TX authentication information
     ```sh
         Authentication information              {...}           K Octets
-    ```
-    ```sh
+
     K = TX authentication length
     ```
     II. TX authentication length
     ```sh
         Authentication length                   {K}             1 Octet
-    ```
-    ```sh
+
     256 > K >= 0, The length of authentication information
     ```
     III. TX authentication version
     ```sh
         Authentication version                  {Ver}           1 Octet
-    ```
-    ```sh
+
     256 > Ver >= 0, The version of authentication information on CIS
     ```
 ### CSTX ID is the output of SHA-256 hash function, whose input is the CSTX.<br/>
