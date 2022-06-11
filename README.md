@@ -99,21 +99,21 @@ CIS model has 4 layers to address a particular process of a procedure on CIS.
 	Based on the process reference, the information can be a Signature or a MAC.<br/>
     I. TX authentication information
     ```sh
-        TX authentication information     {...}                 K Octets
+        Authentication information              {...}           K Octets
     ```
     ```sh
     K = TX authentication length
     ```
     II. TX authentication length
     ```sh
-        Length                           {K}                    1 Octet
+        Authentication length                   {K}             1 Octet
     ```
     ```sh
     256 > K >= 0, The length of authentication information
     ```
     III. TX authentication version
     ```sh
-        Version                         {Ver}                   1 Octet
+        Authentication version                  {Ver}           1 Octet
     ```
     ```sh
     256 > Ver >= 0, The version of authentication information on CIS
