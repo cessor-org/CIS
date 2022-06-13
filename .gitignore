@@ -17,4 +17,6 @@ _build
 *.iml
 rebar3.crashdump
 .vscode
+notes
+services
 *~
