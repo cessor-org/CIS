@@ -1,0 +1,40 @@
+WindowControl
+{
+    background-color: transparent;
+}
+QPushButton#mini_btn
+{
+    background-color: transparent;
+    border: none;
+    /*border-bottom: 1px solid rgb(200,200,200);*/
+}
+QPushButton#mini_btn:hover
+{
+    background-color: rgb(50,50,50);
+    border-radius: 2px
+}
+QPushButton#maxi_btn
+{
+    background-color: transparent;
+    border: none;
+}
+QPushButton#maxi_btn:hover
+{
+    background-color: rgb(50,50,50);
+    border-radius: 2px
+}
+QPushButton#close_btn
+{
+    background-color: transparent;
+    border: none;
+}
+QPushButton#close_btn:hover
+{
+    background-color: rgb(50,50,50);
+    border-radius: 2px
+}
+
+TabBar
+{
+    background-color: green;
+}

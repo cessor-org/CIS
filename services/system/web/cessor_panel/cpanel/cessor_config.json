@@ -1,0 +1,14 @@
+{
+    "name" : "",
+    "version" : "",
+    "required" : "required test",
+    "resources" : {
+        "mouse" : "",
+        "keyboard" : "",
+        "microphone" : "",
+        "camera" : "",
+        "remote_controller" : "",
+        "sensores" : ""
+    },
+    "notifications" : ""
+}

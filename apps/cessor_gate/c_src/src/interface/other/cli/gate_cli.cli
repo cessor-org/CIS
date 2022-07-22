@@ -1,0 +1,48 @@
+# check if the input argument is cli, gui or help
+
+  ******  *******  *******  *******   ****     ****
+**       **       **       **       **    ** **    **
+**       *****      ****     ****   **    ** ** **
+**       **             **       ** **    ** **   **
+  ******  ******* *******  *******    ****   **    **
+
+%%%-------------------------------------------------------------------
+%%  Cessor Information Systems, CIS
+%%  CIS License v0.1.0
+%%  https://cessor.org
+%%  Cessor Service Transaction Protocol
+%%  Version Crown-Block index = 0
+%%  Version Serial Domain = 0
+%%  Version Serial Number = 0
+%%  Service Domain = 0;         System service domain
+%%  Service Sub-Domain = 0;     System service sub-domain
+%%  Procedure Range = 3;        Gate Procedure Packages Range
+%%  Procedure Package = 3;      Interface_remote Procedure Package
+%%%-------------------------------------------------------------------
+
+Docking...
+
+# check if there is tls information
+# IF no, create the information, save key in memory
+## ensure cessor node is launched
+## connect to the node, tls connection
+## check if there is cessor crypto information
+## IF no
+### create new cessor password
+### pass the password to the node
+### save encrypted key file on disk
+
+## IF yes, ask the cessor password
+
+# IF yes, ask the cessor password to decrypt key
+# check if the password is correct
+## IF no, error; password is incorrect, try again
+## IF yes
+### ensure cessor node is launched
+### connect to the node, tls connection
+### check if there is cessor crypto information
+### IF no, error; password is incorrect, try again
+
+CLI gate is docked into cessor unit successfully!
+Find commands under 'help' or 'how'.
+1>

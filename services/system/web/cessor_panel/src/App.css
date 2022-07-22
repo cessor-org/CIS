@@ -1,0 +1,441 @@
+/*
+    Containers
+*/
+/*
+    App Container
+*/
+.appContainer{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+/*
+    Menu Container
+*/
+.menuContainer{
+    position: fixed;
+    margin-left: 0px;
+    padding: 0;
+    
+}
+.menuContainer.lightMode{
+    background-color: var(--lightMode-menu-back);
+    /*border-right: 1px solid var(--lightMode-menu-hover-back);*/
+}
+.menuContainer.darkMode{
+    background-color: var(--darkMode-menu-back);
+    border-right: 1px solid black;
+}
+/*
+    Main Container
+*/
+.mainContainer{
+    position: fixed;
+    padding: 0;
+    z-index: 0;
+}
+/*
+    Footer Container
+*/
+.footerContainer{
+    position: fixed;
+    padding: 0;
+    z-index: 0;
+    width: 100vw;
+    background-color: rgb(30, 30, 30);
+    color:white;
+    /*border-top: 1px solid rgb(50, 50, 50);*/
+}
+/*
+    Global bootstrap styles
+*/
+.container{
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    min-width: 100%;
+}
+/*
+    Menu component
+*/
+
+/*
+    Menu Header
+*/
+.menu.header{
+    padding: 0;
+    margin: 15px 0 10px 0;
+    font-family: "blinker";
+    font-size: 33px;
+    text-align: center;
+    cursor: pointer;
+}
+.menu.header.lightMode{
+    color:var(--lightMode-menu-deactive);
+}
+.menu.header.lightMode:hover{
+    color: var(--lightMode-menu-hover-color);
+}
+.menu.header.lightMode.active:hover{
+    color: var(--lightMode-menu-active);
+}
+.menu.header.darkMode{
+    color:var(--darkMode-menu-deactive);
+}
+.menu.header.darkMode:hover{
+    color: var(--darkMode-menu-hover-color);
+}
+.menu.header.darkMode.active:hover{
+    color: var(--darkMode-menu-active);
+}
+/*
+    Menu Body
+*/
+.menu.body{
+    padding: 10px 0 0 0;
+    margin: 5px 0 0 0;
+    height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+/*
+    Menu Body
+*/
+.menu.footer{
+    position: absolute;
+    padding: 10px 0 0 0;
+    margin: 5px 0 0 0;
+    text-align: center;
+    cursor: pointer;
+}
+/*
+    Menu All
+*/
+.menu .icon{
+    font-size: 17px;
+}
+.menu .title{
+    font-size: 12px;
+}
+
+.menu.lightMode .icon{
+    color:var(--lightMode-menu-deactive);
+}
+.menu.lightMode .title{
+    color:var(--lightMode-menu-deactive);
+}
+.menu.lightMode:hover{
+    background-color: var(--lightMode-menu-hover-back);
+    border-radius: 5px;
+}
+.menu.lightMode:hover .icon{
+    color: var(--lightMode-menu-hover-color);
+}
+.menu.lightMode:hover .title{
+    color: var(--lightMode-menu-hover-color);
+}
+.menu.lightMode.active{
+    color: var(--lightMode-menu-active);
+    background-color: var(--lightMode-menu-hover-back);
+    border-radius: 5px;
+}
+.menu.lightMode.active .icon{
+    color: var(--lightMode-menu-active);
+    font-size: 20px;
+}
+.menu.lightMode.active .title{
+    color: var(--lightMode-menu-active);
+}
+.menu.darkMode .icon{
+    color:var(--darkMode-menu-deactive);
+}
+.menu.darkMode .title{
+    color:var(--darkMode-menu-deactive);
+}
+.menu.darkMode:hover{
+    background-color: var(--darkMode-menu-hover-back);
+    border-radius: 5px;
+}
+.menu.darkMode:hover .icon{
+    color: var(--darkMode-menu-hover-color);
+}
+.menu.darkMode:hover .title{
+    color: var(--darkMode-menu-hover-color);
+}
+.menu.darkMode.active{
+    color: var(--darkMode-menu-active);
+    background-color: var(--darkMode-menu-hover-back);
+    border-radius: 5px;
+}
+.menu.darkMode.active .icon{
+    color: var(--darkMode-menu-active);
+    font-size: 20px;
+}
+.menu.darkMode.active .title{
+    color: var(--darkMode-menu-active);
+}
+/*
+    Main component
+*/
+.main{
+    height: 100%;
+}
+.main.lightMode{
+    background-color: var(--lightMode-main);
+}
+.main.darkMode{
+    color: rgb(200, 200, 200);
+    background-color: var(--darkMode-main);
+}
+
+/*
+    Main Docs
+*/
+
+/*
+    Main Docs Menu
+*/
+.main.docs.menu{
+    margin: 0;
+    padding: 0 0 0 0;
+    position: absolute;
+    border-radius: 0;
+}
+.main.docs.menu .body{
+    position: absolute;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding-top: 30px;
+}
+
+.main.docs.menu.lightMode{
+    background-color: var(--lightMode-main-docs-menu-back);
+}
+.main.docs.menu.darkMode{
+    background-color: var(--darkMode-main-docs-menu-back);
+}
+.main.docs.menu .header{
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-size: 18px;
+}
+.main.docs.menu.lightMode .header{
+    color: var(--lightMode-main-docs-menu-active);
+}
+.main.docs.menu.darkMode .header{
+    color: var(--darkMode-main-docs-menu-active);
+}
+.main.docs.menu .menuElement{
+    height: auto;
+    cursor: pointer;
+    background-color: none;
+}
+.main.docs.menu.lightMode .menuElement:hover{
+    background-color: var(--lightMode-menu-hover-back);
+}
+.main.docs.menu.darkMode .menuElement:hover{
+    background-color: var(--darkMode-menu-hover-back);
+}
+.main.docs.menu .menuElement .title{
+    position: relative;
+    display: inline-block;
+    width: 85%;
+    height: auto;
+    margin: 0px 0 0 0;
+    padding: 0px 0 0px 5px;
+    font-size: 16px;
+    text-align: left;
+    background-color: none;
+}
+.main.docs.menu.lightMode .menuElement .title{
+    color: var(--lightMode-main-docs-menu-text);
+}
+.main.docs.menu.darkMode .menuElement .title{
+    color: var(--darkMode-main-docs-menu-text);
+}
+.main.docs.menu.lightMode .menuElement .title:hover{
+    color: var(--lightMode-main-docs-menu-active);
+}
+.main.docs.menu.darkMode .menuElement .title:hover{
+    color: var(--darkMode-main-docs-menu-active);
+}
+.main.docs.menu .menuElement .icon{
+    position: relative;
+    display: inline-block;
+    width: 15%;
+    margin: 0px 0 0 0;
+    padding: 0px 0 0 0;
+    font-size: 14px;
+    text-align: center;
+    background-color: none;
+}
+.main.docs.menu.lightMode .menuElement .icon{
+    color:  var(--lightMode-main-docs-menu-icon);
+}
+.main.docs.menu.darkMode .menuElement .icon{
+    color:  var(--darkMode-main-docs-menu-icon);
+}
+.main.docs.menu.lightMode .menuElement .icon:hover{
+    color: var(--lightMode-main-docs-menu-active);
+}
+.main.docs.menu.darkMode .menuElement .icon:hover{
+    color: var(--darkMode-main-docs-menu-active);
+}
+.main.docs.menu.lightMode .menuElement.active .title{
+    color: var(--lightMode-main-docs-menu-active);
+}
+.main.docs.menu.darkMode .menuElement.active .title{
+    color: var(--darkMode-main-docs-menu-active);
+}
+.main.docs.menu.lightMode .menuElement.active .icon{
+    color: var(--lightMode-main-docs-menu-active);
+}
+.main.docs.menu.darkMode .menuElement.active .icon{
+    color: var(--darkMode-main-docs-menu-active);
+}
+.main.docs.menu .fold{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+    text-align: right;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+.main.docs.menu.lightMode .fold{
+    background-color: var(--lightMode-main-docs-menu-foldBack);
+    color: var(--lightMode-main-docs-menu-foldIcon);
+}
+.main.docs.menu.darkMode .fold{
+    background-color: var(--darkMode-main-docs-menu-foldBack);
+    color: var(--darkMode-main-docs-menu-foldIcon);
+}
+.main.docs.menu .expand{
+    position: absolute;
+    bottom: 0;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    padding: 3px 0;
+    cursor: pointer;
+}
+.main.docs.menu.lightMode .expand{
+    background-color: var(--lightMode-main-docs-menu-foldBack);
+    color: var(--lightMode-main-docs-menu-foldIcon);
+}
+.main.docs.menu.darkMode .expand{
+    background-color: var(--darkMode-main-docs-menu-foldBack);
+    color: var(--darkMode-main-docs-menu-foldIcon);
+}
+/*
+    Main Docs Body
+*/
+.main.docs.body{
+    padding: 15px;
+    position: absolute;
+    overflow-y: auto;
+}
+.main.docs.body img{
+    width: 100%;
+    max-width: 700px;
+    padding: 15px;
+    overflow-y: auto;
+}
+.main.docs.body.lightMode{
+    background-color: var(--lightMode-main-docs-body-back);
+    /*border-left: 1px solid var(--lightMode-main-docs-body-border);*/
+}
+.main.docs.body.darkMode{
+    background-color: var(--darkMode-main-docs-body-back);
+    border-left: 1px solid var(--darkMode-main-docs-body-border);
+}
+.main.docs.body.darkMode pre{
+    padding: 7px;
+    background-color: rgb(24, 34, 34);
+}
+/* Title */
+.main.docs.body .title-1{
+    margin: 0;
+    padding: 20px 0 0px 10px;
+    text-align: left;
+    font-size: 28px;
+    background-color: transparent;
+    font-family: "blinker";
+}
+.main.docs.body.lightMode .title-1{
+    color: var(--lightMode-main-docs-body-text);
+}
+.main.docs.body.darkMode .title-1{
+    color: var(--darkMode-main-docs-body-text);
+}
+.main.docs.body .descript{
+    margin: 0 0 20px 0;
+    padding: 0 0 0 10px;
+}
+.main.docs.body .descript p{
+    margin: 0;
+    padding: 0;
+}
+.main.docs.body .ContentElement{
+    margin: 0;
+    padding: 5px 0 5px 10px;
+    text-align: left;
+    background-color: transparent;
+}
+.main.docs.body .ContentElement .title{
+    margin: 0;
+    padding:0;
+    font-size: 22px;
+    width: max-content;
+    border-bottom: 1px solid;
+}
+.main.docs.body.lightMode .ContentElement .title{
+    border-color: var(--lightMode-main-docs-body-underLine);
+}
+.main.docs.body.darkMode .ContentElement .title{
+    border-color: var(--darkMode-main-docs-body-underLine);
+}
+.main.docs.body .ContentElement .descript{
+    margin: 0;
+    padding: 10px 0 0 0;
+    background-color: transparent;
+}
+.main.docs.body .ContentElement .descript .line{
+    margin-right: 5px;
+    display: inline-block;
+}
+.main.docs.body .ContentElement .descript .line.link{
+    cursor: pointer;
+    color: var(--main-docs-body-link);
+}
+.main.docs.body .ContentElement .descript .line.link .icon{
+    margin: 0 0 3px 3px;
+    font-size: 10px;
+}
+.main.docs.body .ContentElement .descript p{
+    /* Deprected */
+    margin: 0;
+    padding: 0;
+}
+.main.docs.body.darkMode .ContentElement .descript{
+    border-color: none;
+}
+
+.main.docs.body .ContentElement .children .block{
+    margin: 0;
+    padding: 10px;
+    font-size: 15px;
+    
+}
+.main.docs.body .ContentElement .children .dot{
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 15px;
+    
+}

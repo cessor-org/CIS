@@ -1,0 +1,24 @@
+Header
+{
+    background-color: rgb(35,35,35);
+    border-bottom: 1px solid rgb(0,0,0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+Header#header_object
+{
+
+}
+Header#header_no_radius
+{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+Header#header_right_no_radius
+{
+    border-top-right-radius: 0px;
+}
+Header#header_left_no_radius
+{
+    border-top-left-radius: 0px;
+}

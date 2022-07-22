@@ -1,0 +1,33 @@
+{
+    "title":"Cessor Gate",
+    "descript":[
+        "A grafical user interface of cessor unit.",
+        "Gate provides two types of interfaces, micro gate and web gate.",
+        "The gates interact with CU service engine to call a particular precedure of a micro service."
+        
+    ],
+    "children":
+        [
+            {
+                "title" : "Micro Gate",
+                "descript": [
+                    "A command-line interface (CLI) to interact with CU service engine.",
+                    "The light interface increases free memory, processing speed and improves the unit performance.",
+                    "Agvantages of micro gate make it suitable to use on micro computers of an IoT system."
+                ]
+            },
+            {
+                "title" : "Web Gate",
+                "descript": [
+                    "An isolated independent web platform on top of cessor system.",
+
+                    "Web Gate performs third party Micro Services as web applications.",
+                    "Web Gate provides an isolated environment to execute web applications.",
+                    "The isolation protects sensitive information of client, server and all third parties.",
+
+                    "Web Gate let Web-App developers use the advantages of the distributed computing and decentralized networking infrastructure.",
+                    "Web servers can use hidden subnet service to clear their footprint by serving from a black hole."
+                ]
+            }
+        ]
+}

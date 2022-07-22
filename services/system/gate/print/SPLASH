@@ -1,0 +1,23 @@
+ _______________________________________________________
+|                                                       |
+|   ******  *******  *******  *******   ****     ****   |
+| **       **       **       **       **    ** **    ** |
+| **       *****      ****     ****   **    ** ** **    |
+| **       **             **       ** **    ** **   **  |
+|   ******  ******* *******  *******    ****   **    ** |
+|_______________________________________________________|
+
+
+%%%-------------------------------------------------------------------
+%%  Cessor Information Systems, CIS
+%%  CIS License v0.1.0
+%%  https://cessor.org
+%%  Cessor Service Transaction Protocol
+%%  Version Crown-Block index = 0
+%%  Version Serial Domain = 0
+%%  Version Serial Number = 0
+%%  Service Domain = 0;         System service domain
+%%  Service Sub-Domain = 0;     System service sub-domain
+%%  Procedure Range = 3;        Gate Procedure Packages Range
+%%  Procedure Package = 3;      Interface_remote Procedure Package
+%%%-------------------------------------------------------------------

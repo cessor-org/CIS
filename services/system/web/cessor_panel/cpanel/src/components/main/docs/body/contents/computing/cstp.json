@@ -1,0 +1,188 @@
+{
+    "title":"Transaction",
+    "descript":[
+        "The information unit of the computing environment.",
+        "Cessor State Transaction is the information unit of storage and transmission on the state.",
+        "Cessor State Transaction, TX, is the integrated information made by a particular procedure of a micro service using CSTP.",
+        "Cessor State Transaction Protocol, CSTP, provides structured information as TX, which is integrated into cessor information system.",
+        [
+            "TX is distributed computing structure, ",
+            "which enables the system nodes to execute, ",
+            "evaluate and validate transactions individually."
+        ]
+    ],
+    "children":
+        [
+            {
+                "title":"TX Anatomy",
+                "descript":[
+                    "TX_id is the 32 octets TX identifier, which is values returned by a hash function, whose algorithm is sha-256 and input value is the TX.",
+                    "TX contains three components:"
+                ],
+                "children": [
+                    {
+                        "type" : "block",
+                        "children" : [
+                            {
+                                "type" : "dash",
+                                "content" : "TX Header"
+                            },
+                            {
+                                "type" : "dash",
+                                "content" : "TX Parameters"
+                            },
+                            {
+                                "type" : "dash",
+                                "content" : "TX Signature"
+                            }
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "TX Header",
+                        "descript": [
+                            "Header component contains the operation information of TX.",
+                            "The length of header depends on activated service flags is from 5 octets to 260 octets.",
+                            "Header component contains five partitions:"
+                        ],
+                        "children": [
+                            {
+                                "type" : "sub",
+                                "title" : "Protocol Version",
+                                "descript": [
+                                    "Version of CNMP is used to generate the TX.",
+                                    "The length of the version is one octet in range of 2^8.",
+                                    "Current version of CNMP is 0."
+                                ]
+                            },
+                            {
+                                "type" : "sub",
+                                "title" : "Service Type",
+                                "descript": [
+                                    "The type of service is the micro service category.",
+                                    "The length of service type is one octet in range of 2^8.",
+                                    "Current reserved types of service:"
+                                ],
+                                "children": [
+                                    {
+                                        "type" : "block",
+                                        "children" : [
+                                            {
+                                                "type" : "dash",
+                                                "content" : "Type 0 for system micro services."
+                                            },
+                                            {
+                                                "type" : "dash",
+                                                "content" : "Type 1 for application micro services."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type" : "sub",
+                                "title" : "Service Identifier",
+                                "descript": [
+                                    "Service ID is the allocated index of the service in the service category.",
+                                    "The length of service ID is one octet in range of 2^8."
+                                ]
+                            },
+                            {
+                                "type" : "sub",
+                                "title" : "Service RPC",
+                                "descript": [
+                                    "Service RPC indicates the procedure of the micro service, which is known as nano service.",
+                                    "The length of service RPC is one octet in range of 2^8.",
+                                    "The nano service uses flags to perform particular tasks."
+                                ]
+                            },
+                            {
+                                "type" : "sub",
+                                "title" : "Service Flags",
+                                "descript": [
+                                    "Service flags are the options of nano services.",
+                                    "The flag partition of header contains two parts:"
+                                ],
+                                "children": [
+                                    {
+                                        "type" : "block",
+                                        "children" : [
+                                            {
+                                                "type" : "dash",
+                                                "content" : 
+                                                    "The length of activated flags. This length is one octet in range of 2^8."
+                                            },
+                                            {
+                                                "type" : "dash",
+                                                "content" : "The list of activated flags. The list can contain 255 flags."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "TX Parameters",
+                        "descript": [
+                            "Parameters component contains the associated information of the procedures.",
+                            "The maxium length of parameters deponds on its service regulation"
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "TX Signature",
+                        "descript": [
+                            "Signature component contains signature information of TX.",
+                            "Current version of signature is 0.",
+                            "Signature component contains two partitions in version 0."
+                        ],
+                        "children": [
+                            {
+                                "type" : "sub",
+                                "title" : "Signature Version",
+                                "descript": [
+                                    "Version of Signature is used to sign the TX.",
+                                    "The length of the Signature is one octet in range of 2^8.",
+                                    "Current version of Signature is 0."
+                                ],
+                                "children": [
+                                    {
+                                        "type" : "block",
+                                        "children" : [
+                                            {
+                                                "type" : "dash",
+                                                "content" : 
+                                                    "Algorithm: ECDSA"
+                                            },
+                                            {
+                                                "type" : "dash",
+                                                "content" : "Digest Type: secp256k1"
+                                            },
+                                            {
+                                                "type" : "dash",
+                                                "content" : 
+                                                    "Length: 65 octets"
+                                            },
+                                            {
+                                                "type" : "dash",
+                                                "content" : "Structure: {v, r, s}"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type" : "sub",
+                                "title" : "Signature data",
+                                "descript": [
+                                    "The length of signature in version 0 is 65 octets."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+}

@@ -1,0 +1,90 @@
+TabBar
+{
+    background-color: transparent;
+}
+QPushButton
+{
+    background-color: transparent;
+    border:none;
+    font: 22pt  'blinker';
+    color: rgb(120,120,120);
+}
+QPushButton:hover
+{
+    /* border: 1px solid blue; */
+    background-color: rgb(18,18,18);
+    border: 1px solid rgb(80,80,80);
+    border-radius: 3px;
+}
+/*  New Tab */
+QPushButton#newTab
+{
+    background-color: transparent;
+    border:none;
+}
+QPushButton#newTab:hover
+{
+    background-color: rgb(18,18,18);
+    border: 1px solid rgb(80,80,80);
+    border-radius: 3px;
+}
+QPushButton#newTab:focus
+{
+    background-color: rgb(18,18,18);
+    border-radius: 3px;
+}
+
+/*  Arrow left */
+
+QPushButton#arrowActive_l
+{
+    border-right: 1px solid rgb(150,150,150);
+}
+QPushButton#arrowActive_l:hover
+{
+    background-color: rgb(18,18,18);
+    border: 1px solid rgb(80,80,80);
+    border-right: 1px solid rgb(150,150,150);
+    border-radius: 3px;
+}
+QPushButton#arrowPassive_l
+{
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    border-right: 1px solid rgb(100,100,100);
+}
+QPushButton#arrowPassive_l:hover
+{
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    border-right: 1px solid rgb(100,100,100);
+}
+
+/*  Arrow right */
+
+QPushButton#arrowActive_r
+{
+    border-left: 1px solid rgb(150,150,150);
+}
+QPushButton#arrowActive_r:hover
+{
+    background-color: rgb(18,18,18);
+    border: 1px solid rgb(80,80,80);
+    border-left: 1px solid rgb(150,150,150);
+    border-radius: 3px;
+}
+QPushButton#arrowPassive_r
+{
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid rgb(100,100,100);
+}
+QPushButton#arrowPassive_r:hover
+{
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    border-left: 1px solid rgb(100,100,100);
+}

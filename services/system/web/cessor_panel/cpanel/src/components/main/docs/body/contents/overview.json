@@ -1,0 +1,100 @@
+{
+    "title":"Cessor Project",
+    "descript":[
+        "A fully decentralized open-source project under Cessor License."
+    ],
+    "children":
+        [
+            {
+                "title":"Cessor System",
+                "descript":[
+                    "A distributed computing environment on top of a decentralized network."
+                ],
+                "children": [
+                    {
+                        "type" : "sub",
+                        "title" : "Cessor State",
+                        "descript": [
+                            [
+                                "A distributed computing and storage",
+                                {
+                                    "title":"environment",
+                                    "link":["computing", "environment"]
+                                },
+                                "of the system."
+                            ],
+                            "",
+                            [
+                                "An environment to analyse, evaluate and execute",
+                                {
+                                    "title":"Micro Services",
+                                    "link":["computing", "micro_service"]
+                                },
+                                "."
+                            ]
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "Cessor Network",
+                        "descript": [
+                            [
+                                "A decentralized",
+                                {
+                                    "title":"network",
+                                    "link":["network", "intro"]
+                                },
+                                "on top of",
+                                {
+                                    "title":"CNMP",
+                                    "link":["network", "cnmp"]
+                                },
+                                "."
+                            ],
+                            "",
+                            [
+                                "It is the peer-to-peer network of ",
+                                {
+                                    "title":"cessor units",
+                                    "link":["unit"]
+                                },
+                                "."
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "title":"Cessor Gate",
+                "descript":[
+                    "The grafical user interface of cessor unit.",
+                    [
+                        {
+                            "title":"Cessor Gate",
+                            "link":["gate", "intro"]
+                        },
+                        "provides two types of interfaces,",
+                        {
+                            "title":"micro gate",
+                            "link":["gate", "micro"]
+                        },
+                        "and",
+                        {
+                            "title":"web gate",
+                            "link":["gate", "web"]
+                        }
+                    ],
+                    "Micro gate is a command-line interface (CLI) to interact with CU service engine.",
+                    "Web Gate provides an isolated environment to execute web applications."
+                ]
+            },
+            {
+                "title":"Cessor Duty",
+                "descript":[
+                    "",
+                    "Rage, rage against the dying of the light.",
+                    "There are two major of global warnings, the first is climate and the second is privacy."
+                ]
+            }
+        ]
+}

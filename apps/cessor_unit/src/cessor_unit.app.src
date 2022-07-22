@@ -1,0 +1,19 @@
+{application, cessor_unit,
+ [{description, "CESSOR UNIT"},
+  {vsn, "0.1.0"},
+  {registered, [ cessor_unit ]},
+  {mod, {cessor_unit, [] }},
+  {applications,
+   [kernel,
+    stdlib,
+    cstp
+   ]},
+  {env,[
+      %{file, "/usr/local/log"}
+      %{file, "/usr/local/log"}
+    ]},
+  {modules, []},
+
+  {licenses, ["CIS Licence v0.1.0"]},
+  {links, []}
+ ]}.

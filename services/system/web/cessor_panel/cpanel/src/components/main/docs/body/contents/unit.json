@@ -1,0 +1,109 @@
+{
+    "title":"Cessor Unit, CU",
+    "descript":[
+        "The computing, storage and communication unit of cessor systems.",
+        [
+            "CU provides the service engine to analyse, evaluate and execute",
+            {
+                "title":"Micro Services",
+                "link":["computing", "micro_service"]
+            },
+            "."
+        ],
+        [
+            "CU Provides decentralized ",
+            {
+                "title":"network",
+                "link":["network", "intro"]
+            },
+            "on top of ",
+            {
+                "title":"CNMP",
+                "link":["network", "cnmp"]
+            },
+            "routed by ",
+            {
+                "title":"distributed hash table",
+                "link":["network", "dht"]
+            },
+            "."
+        ]
+    ],
+    "children":
+        [
+            {
+                "title":"Unit Anatomy",
+                "descript":[
+                    "A unit contains five components:"
+                ],
+                "children": [
+                    {
+                        "type" : "sub",
+                        "title" : "Core",
+                        "descript": [
+                            "A state management service initiates unit components and manages them.",
+                            ""
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "Engine",
+                        "descript": [
+                            "A cessor micro service platform to perform particular tasks.",
+                            "Engine performs state and network services."
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "Network",
+                        "descript": [
+                            "A decentralized network on top of CNMP routed by distributed hash table."
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "Storage",
+                        "descript": [
+                            "A distributed telecommunications DBMS."
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "Gate",
+                        "descript": [
+                            [
+                                "An isolated",
+                                {
+                                    "title":"interface",
+                                    "link":["gate", "intro"]
+                                },
+                                "of the engine."
+                            ],
+                            "There are two types of gate interface:"
+                            
+                        ],
+                        "children": [
+                            {
+                                "type" : "sub",
+                                "title" : "Micro Gate",
+                                "descript": [
+                                    "A command-line interface (CLI) to interact with the engine services.",
+                                    "The light interface increases free memory, processing speed and the unit performance.",
+                                    "Agvantages of micro gate make it suitable to use on micro computers of an IoT system."
+                                ]
+                            },
+                            {
+                                "type" : "sub",
+                                "title" : "Web Gate",
+                                "descript": [
+                                    "A graphical user interface (GUI) to interact with the engine services.",
+                                    "Web gate provides web application platform and it is optional."
+                                ]
+                            }
+                        ]
+                    }
+                    
+                ]
+            }
+        ]
+}

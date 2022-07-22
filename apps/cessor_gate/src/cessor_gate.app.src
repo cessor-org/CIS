@@ -1,0 +1,14 @@
+{application, cessor_gate,
+ [{description, "Interface libraries of CIS."},
+  {vsn, "0.1.0"},
+  {registered, [cessor_gate]},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["CIS Licence v0.1.0"]},
+  {links, []}
+ ]}.

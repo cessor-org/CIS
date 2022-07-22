@@ -1,0 +1,73 @@
+{
+    "title":"Event Cycle",
+    "descript":[
+        "Auction Event Cycle is an infinite timed loop with period of 180 000 ms.",
+        "The genesis Cycle is the first loop and its initiation time is 00:00:00 01.01.2021 UTC"
+    ],
+    "children":
+        [
+            {
+                "title":"Phases",
+                "descript":[
+                    "An event cycle contains six phases"
+                ],
+                "children": [
+                    {
+                        "type" : "sub",
+                        "title" : "Phase I, AES Administration",
+                        "descript": [
+                            "Start: 000 000 ms",
+                            "End:   010 000 ms",
+                            "AES Administrative party initiates the services by an AES Administration TX."
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "Phase II, Service registration",
+                        "descript": [
+                            "Start: as soon as AES Administration TX is available",
+                            "End:   030 000 ms",
+                            "nAES and bAES candidate parties register for corresponding services."
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "Phase III, AES Opening",
+                        "descript": [
+                            "Start: 030 000 ms",
+                            "End:   040 000 ms",
+                            "AES Administrative party lists the registrations.",
+                            "AES Administrative party proves the consensus is reached."
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "Phase IV, Service Bidding",
+                        "descript": [
+                            "Start: as soon as AES Opening TX is available",
+                            "End:   060 000 ms",
+                            "Candidate parties bids for the service, whose registration is already listed."
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "Phase V, Block Loading",
+                        "descript": [
+                            "Start: as soon as Service registration TX is available",
+                            "End:   150 000 ms",
+                            "bAES candidate parties registered for base block can use this phase to upload huge TX lists."
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "Phase VI, End of Service",
+                        "descript": [
+                            "Start: as soon as Loaded Block is evaluated",
+                            "End:   180 000 ms",
+                            "AES Administrative party ends the services by an AES EoS TX."
+                        ]
+                    }
+                ]
+            }
+        ]
+}

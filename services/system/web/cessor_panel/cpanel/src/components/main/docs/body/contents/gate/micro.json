@@ -1,0 +1,21 @@
+{
+    "title" : "Micro Gate",
+    "descript": [
+        "A command-line interface (CLI) to interact with CU service engine.",
+        "The light interface increases free memory, processing speed and improves the unit performance.",
+        "Agvantages of micro gate make it suitable to use on micro computers of an IoT system.",
+        "MS-Gate provides an environment in which a particular precedure of micro service is called.",
+        "Micro service can be a configured public MS or a private MS.",
+        "Micro service can be used on cessor network or on a private network.",
+        "Micro service gate is suitable to develop IoT micro secrvices."
+    ],
+    "children":
+        [
+            {
+                "title" : "",
+                "descript": [
+                    ""
+                ]
+            }
+        ]
+}

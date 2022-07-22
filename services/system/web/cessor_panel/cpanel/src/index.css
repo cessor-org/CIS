@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*
+    Font
+*/
+@font-face {
+  font-family: "blinker";
+  src: url("./blinker.ttf");
+}
+
+:root {
+  /*  MENU  */
+  --lightMode-menu-back: rgb(220,220,220);
+  --lightMode-menu-active: rgb(21, 121, 21);
+  --lightMode-menu-deactive: rgb(90, 90, 90);
+  --lightMode-menu-hover-color: rgb(0, 0, 0);
+  --lightMode-menu-hover-back: rgb(200,200,200);
+
+  --darkMode-menu-back: rgb(30,30,30);
+  --darkMode-menu-active: rgb(21, 121, 21);
+  --darkMode-menu-deactive: rgb(70, 70, 70);
+  --darkMode-menu-hover-color: rgb(220, 220, 220);
+  --darkMode-menu-hover-back: rgb(20, 20, 20);
+
+  /*  MAIN  */
+  --lightMode-main: rgb(240,240,240);
+  --darkMode-main: rgb(0,0,0);
+  /*
+      Docs  Menu
+  */
+  
+  --lightMode-main-docs-menu-back: rgb(190,190,190);
+  --lightMode-main-docs-menu-active: rgb(218, 92, 3);
+  --lightMode-main-docs-menu-text: rgb(70,70,70);
+  --lightMode-main-docs-menu-icon: rgb(160,160,160);
+  --lightMode-main-docs-menu-line: rgb(160,160,160);
+  --lightMode-main-docs-menu-foldBack: rgb(170, 170, 170);
+  --lightMode-main-docs-menu-foldIcon: rgb(120, 120, 120);
+
+  
+  --darkMode-main-docs-menu-back: rgb(35,35,35);
+  --darkMode-main-docs-menu-active: rgb(140, 65, 10);
+  --darkMode-main-docs-menu-text: rgb(205,205,205);
+  --darkMode-main-docs-menu-icon: rgb(100,100,100);
+  --darkMode-main-docs-menu-line: rgb(50,50,50);
+  --darkMode-main-docs-menu-foldBack: rgb(50, 50, 50);
+  --darkMode-main-docs-menu-foldIcon: rgb(80, 80, 80);
+
+  /*
+      Docs  Body
+  */
+
+  --main-docs-body-link: rgb(21, 121, 21);
+
+  --lightMode-main-docs-body-back: rgb(220,220,220);
+  --lightMode-main-docs-body-text: rgb(50,50,50);
+  --lightMode-main-docs-body-underLine: rgb(150,150,150);
+  --lightMode-main-docs-body-border: rgb(110,110,110);
+
+  --darkMode-main-docs-body-back: rgb(25,22,25);
+  --darkMode-main-docs-body-text: rgb(185,185,185);
+  --darkMode-main-docs-body-underLine: rgb(90,70,70);
+  --darkMode-main-docs-body-border: rgb(0,0,0);
+}
+
+
+/*
+  Scrollbar
+*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--darkMode-deactive);
+  border-radius: 10px; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

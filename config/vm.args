@@ -1,0 +1,11 @@
+-sname cessor
+
+-setcookie ${COOKIE}
+
+-connect_all false
+
+-env LD_LIBRARY_PATH "$LD_LIBRARY_PATH:lib/cessor_gate-0.1.0/priv;lib/cessor_gate-0.1.0/priv/lib"
+
+-dist_listen false
+-hidden
+-dist_auto_connect never

@@ -1,0 +1,38 @@
+{
+    "title":"Environment",
+    "descript":[
+        "MS is a configured software project written in C/C++, JAVA, Erlang, Python or JS."                
+    ],
+    "children":
+        [
+            {
+                "title":"Description",
+                "descript":[
+                    "..."                    
+                ]
+            },
+            {
+                "title":"...",
+                "descript":[
+                    "..."
+                ],
+                "children": [
+                    {
+                        "type" : "sub",
+                        "title" : "...",
+                        "descript": [
+                            "..."
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "...",
+                        "descript": [
+                            "..."
+                        ]
+                    }
+                                      
+                ]
+            }
+        ]
+}

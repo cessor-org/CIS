@@ -1,0 +1,41 @@
+{
+    "title" : "Web Gate",
+    "descript": [
+        "An isolated environment to execute web applications, Web-App",
+
+        "Web Gate let Web-App developers use the advantages of the distributed computing and decentralized networking infrastructure.",
+        "Decentralized networking infrastructure makes the developers able to design peer-to-peer application, this feature enhances real-time applications.",
+
+        "Web servers can clear their footprint using hidden subnet services.",
+        "Information structure of Web Gate is based on cessor state transaction protocol, CSTP."
+        
+    ],
+    "children":
+        [
+            {
+                "title" : "Web-App service",
+                "descript": [
+                    "A single page application, whose static assets are available in cessor unit's web services directory.",
+                    "The static assets represent web application resources, which are loaded into web engine page locally.",
+                    "Web-App needs to use CGDriverJs to interact with CU service engine."
+                ]
+            },
+            {
+                "title" : "CGDriverJs",
+                "descript": [
+                    "The only possible communication tool, which makes Web-App able to call particular precedures of micro services by CU engine.",
+                    "The tool makes Web-App able to call configured public micro services such as network, state or application services.",
+                    "Web-App can use network services to stablish safe and secure p2p connections with given cessor unit IDs over Cessor Network on top of CNMP."
+                ]
+            },
+            {
+                "title" : "Restrictions",
+                "descript": [
+                    "The isolated envirment protects ...",
+                    "All communication protocols on top of IP such as TCP, UDP and etc are banned.",
+                    "All url requests are banned except file requests on the Web-App's disk space.",
+                    "All connection requests, such as XHTML, web sockets and etc are blocked."
+                ]
+            }
+        ]
+}

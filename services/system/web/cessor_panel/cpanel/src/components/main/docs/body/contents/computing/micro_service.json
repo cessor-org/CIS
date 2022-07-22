@@ -1,0 +1,45 @@
+{
+    "title":"Micro Service, MS",
+    "descript":[
+        "A service package, which provides procedures with corresponding flags to perform particular tasks.",
+        [
+            "MS is a configured software project written in programming languages",
+            "supported by",
+            {
+                "title":"computing environment",
+                "link":["computing", "environment"]
+            },
+            "."
+        ]
+    ],
+    "children":
+        [
+            {
+                "title":"MS anatomy",
+                "descript":[
+                    
+                    "Micro Service can provide 256 unique procedures.",
+                    "Micro Service procedure can provide 255 flags.",
+                    "Micro Service uses CS Transactions as input and/or output information."
+                ]
+            },
+            {
+                "title":"System MS",
+                "descript":[
+                    
+                ]
+            },
+            {
+                "title":"Network MS",
+                "descript":[
+                    
+                ]
+            },
+            {
+                "title":"applicaton MS",
+                "descript":[
+                    
+                ]
+            }
+        ]
+}

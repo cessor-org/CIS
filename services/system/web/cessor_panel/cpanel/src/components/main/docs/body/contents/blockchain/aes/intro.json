@@ -1,0 +1,173 @@
+{
+    "title":"Auction Event Service",
+    "descript":[
+        "Auction Event Service is a nano service of D20 Blockchain Service, which provides the consensus mechanism of D20 Blockchain.",
+        "AES provides blind auctions for two type of services, Next AES and Block AES.",
+        "Winner of Next AES is the next auction event service provider.",
+        "Winners of Block AES upgrade the D20 Blockchain tree in specific dimensions."
+    ],
+    "children":
+        [
+            {
+                "title":"Event Cycle",
+                "descript":[
+                    "A Cycle of AES is ‘180 000’ milliseconds and contains 6 phases.",
+                    "Event cycle is a time table of the event's expected operations."
+                ]
+            },
+            {
+                "title":"Event Service",
+                "descript":[
+                    "The main service is AES, auction event service, which provides the competition for two types of services"
+                ],
+                "children": [
+                    {
+                        "type" : "block",
+                        "children" : [
+                            {
+                                "type" : "dash",
+                                "content" : "nAES, next auction event service or next AES"
+                            },
+                            {
+                                "type" : "dash",
+                                "content" : "bAES, D20 Block auction event service"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title":"Party",
+                "descript":[
+                    "AES party is a group of Cessor Nodes, which handles the event services.",
+                    "AES party provides configured structure to perform event tasks"
+                    ],
+                "children": [
+                    {
+                        "type" : "block",
+                        
+                        "children" : [
+                            {
+                                "type" : "dash",
+                                "content" : "Fault tolerated leadership"
+                            },
+                            {
+                                "type" : "dash",
+                                "content" : "Reliable network infrastructure"
+                            },
+                            {
+                                "type" : "dash",
+                                "content" : "Concurrent processing capacity to compute transactions"
+                            },
+                            {
+                                "type" : "dash",
+                                "content" : "Storage capability"
+                            },
+                            {
+                                "type" : "dash",
+                                "content" : "Trusted investors"
+                            }
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "Event party",
+                        "descript": [
+                            "AES, theoretically, needs three types of parties"
+                        ],
+                        "children": [
+                            {
+                                "type" : "block",
+                                
+                                "children" : [
+                                    {
+                                        "type" : "dash",
+                                        "content" : "AES Administrative party"
+                                    },
+                                    {
+                                        "type" : "dash",
+                                        "content" : "nAES Bidder party ( next AES Administration Candidate )"
+                                    },
+                                    {
+                                        "type" : "dash",
+                                        "content" : "bAES Bidder party ( next Dk Block Candidate )"
+                                    }
+                                ]
+                            },
+                            {
+                                "type" : "dot",
+                                "content" : "AES needs at least one nAES candidate party, otherwise the period has to extend."
+                            },
+                            {
+                                "type" : "dot",
+                                "content" : "AES Administrative party is responsible for all challenges during the event."
+                            },
+                            {
+                                "type" : "dot",
+                                "content" : "AES Administrative party can be candidate party for nAES or/and bAES."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title":"AES flags",
+                "descript":[
+                    "AES flag is a done flag allocated to a party member for a successfully provided service by the party.",
+                    "Flag owner can delegate it to its party/parties for particular purposes.",
+                    "The ownership of an AES flag is atomic and can not be changed.",
+                    "AES releases four types of AES flags"
+                ],
+                "children": [
+                    {
+                        "type" : "block",
+                        "children" : [
+                            {
+                                "type" : "dash",
+                                "content" : "ADMIN flag is allocated to AES administrative party leader"
+                            },
+                            {
+                                "type" : "dash",
+                                "content" : "BLOCK flag is allocated to bAES party leader"
+                            },
+                            {
+                                "type" : "dash",
+                                "content" : "LORD flag is allocated to event services party lords"
+                            },
+                            {
+                                "type" : "dash",
+                                "content" : "INVEST flag is allocated to event services party investors"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title":"AES credit",
+                "descript":[
+                    "AES credit indicates all obtained flags by the AES administrative party.",
+                    "AES credit has to be greater than 50% of the latest AES credit to reach the consensus.",
+                    "AES administrative party collects the flags via three types of resources"
+                ],
+                "children": [
+                    {
+                        "type" : "block",
+                        "children" : [
+                            {
+                                "type" : "dash",
+                                "content" : "Delegated flags of AES administrative party"
+                            },
+                            {
+                                "type" : "dash",
+                                "content" : "Inherited flags of latest AES administrative party"
+                            },
+                            {
+                                "type" : "dash",
+                                "content" : "Delegated flags of event services candidate party"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+} 

@@ -1,0 +1,79 @@
+TabObject
+{
+    background-color: transparent;
+    border: 0px solid gray;
+}
+TabObject:hover
+{
+    background-color: rgb(18,18,18);
+    border: 1px solid rgb(80,80,80);
+    border-radius: 3px;
+}
+TabObject:focus
+{
+    background-color: rgb(70,70,70);
+    border: none;
+    border-radius: 3px;
+}
+TabObject#mainTab:focus
+{
+    /*background-color: rgb(70,70,70);*/
+    background-color: rgb(20,20,20);
+    border: none;
+    border-radius: 3px;
+}
+QLabel#titleMainActive
+{
+    background-color: transparent;
+    border:none;
+    font: 28px  'blinker';
+    color: rgb(180,125,0)
+}
+QLabel#titleMainPassive
+{
+    background-color: transparent;
+    border:none;
+    font: 28px  'blinker';
+    color: rgb(120,120,120);
+}
+QPushButton
+{
+    background-color: transparent;
+    border:none;
+}
+QLabel#titleTabActive
+{
+    background-color: transparent;
+    font-size: 14px;
+    color: white;
+}
+QLabel#titleTabPassive
+{
+    background-color: transparent;
+    font-size: 14px;
+    color: rgb(150,150,150);
+}
+QLabel#titleTabPassive:hover
+{
+    color: rgb(220,220,220);
+}
+QPushButton#closeTabActive
+{
+    background-color: rgb(80,80,80);
+}
+QPushButton#closeTabActive:hover
+{
+    background-color: rgb(120,120,120);
+    border:none;
+    border-radius: 3px;
+}
+QPushButton#closeTabPassive
+{
+    background-color: transparent;
+}
+QPushButton#closeTabPassive:hover
+{
+    background-color: rgb(120,120,120);
+    border:none;
+    border-radius: 3px;
+}

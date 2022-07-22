@@ -1,0 +1,47 @@
+{
+    "title":"D20 Blockchain",
+    "descript":[
+        "D20 Blockchain service is the first system micro service, which provides storage mechanism of the state.",
+            "D20 Blockchain is a unique logical chain of valid transactions through twenty dimensional chains.",
+            "To develop the chain healthy and fairly, a blind auction as auction event service is provided."
+    ],
+    "children":
+        [
+            {
+                "title":"Dimensional chain",
+                "descript":[
+                    "Dimensional chain is an independent chain of corresponding blocks.",
+                    "There are three types of chain"
+                ],
+                "children": [
+                    {
+                        "type" : "sub",
+                        "title" : "Base chain",
+                        "descript": [
+                            "Base chain is the chain of D0(base) blocks in dimension 0.",
+                            "Base block is the most inner dimensional block of D20 Block.",
+                            "A base block contains fresh transactions."
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "Inter chain",
+                        "descript": [
+                            "Inter chain is the chain of Dk(inter) blocks, when Dk is dimension of the chain.",
+                            "Dimension of an inter chain is from 1 to 18.",
+                            "An inter block contains two fresh Dk-1 blocks."
+                        ]
+                    },
+                    {
+                        "type" : "sub",
+                        "title" : "Crown chain",
+                        "descript": [
+                            "Crown chain is the chain of D19(crown) blocks in dimension 19.",
+                            "Crown block is the most outer dimensional block of D20 Block.",
+                            "A crown block contains two fresh D18 blocks."
+                        ]
+                    }
+                ]
+            }
+        ]
+}

@@ -1,0 +1,23 @@
+MainWindow
+{
+    background-color: red;
+    border: none;
+}
+QWidget#window
+{
+    background-color: blue;
+
+    border: none;
+}
+#Header
+{
+    background-color: green;
+
+    border: none;
+}
+#winBody
+{
+    background-color: gray;
+
+    border: none;
+}

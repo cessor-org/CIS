@@ -1,0 +1,32 @@
+{application, cstp,
+ [{description, "Cessor Service Transaction Protocol"},
+  {vsn, "0.1.0"},
+  {registered, [cstp]},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {
+    modules
+    , [
+      %%  Version
+      cstp
+      , cstp_00
+      , cstp_0000
+      , cstp_000000
+      %%  Service
+      , cstp_000000_00
+      , cstp_000000_0000
+      %%  Procedure
+        %% Unit pRange
+        , cstp_000000_0000_00
+        %%  Core pPack
+        , core
+        , cstp_000000_0000_0000
+    ]
+  },
+
+  {licenses, ["CIS License v0.1.0"]},
+  {links, []}
+ ]}.
